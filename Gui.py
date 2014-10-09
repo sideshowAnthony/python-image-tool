@@ -1,8 +1,15 @@
 #!/usr/bin/env python
 
-# Developed using wx version 2.8.12.1
 import wx
 from Controller import Controller
+
+# Run this file to start the application
+# Handles gui stuff only, and passes data to and from the controller only
+
+# Developed using:
+# - Python (major=2, minor=7, micro=6, releaselevel='final', serial=0)
+# - wx version 2.8.12.1
+# - Ubuntu 14.04
 
 class MainWindow(wx.Frame):
 

@@ -1,5 +1,9 @@
 import subprocess
 
+# This class controls the program, delegating tasks to other classes
+# This is not the file you should execute. Gui.py is.
+# It passes data from and to the GUI without knowing how it gets displayed
+
 class Controller():
 
 	dimensionOptions = ( (640,480), (800,600), (1280,960) )
