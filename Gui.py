@@ -27,17 +27,15 @@ class MainWindow(wx.Frame):
 		self.sizer.Add(self.chRotation, proportion=0, flag=wx.ALL, border=5)
 		self.sizer.Add(self.btnOpen, proportion=0, flag=wx.ALL, border=5)
 		self.sizer.Add(self.txtLog, proportion=0, flag=wx.ALL, border=5)
-
 		self.panel_sizer = wx.BoxSizer()
 		self.panel_sizer.Add(self.sizer, flag=wx.EXPAND | wx.ALL, border=10)
-
 		bkg.SetSizer(self.panel_sizer)
 		self.AppendToLog('1.Select dimensions')
 		self.AppendToLog('2.Set rotation - if any')
 		self.AppendToLog('3.Choose image/s to work on')
 		self.AppendToLog('4.Wait for image/s to copy')
 
-		bkg.Show(True)		
+		bkg.Show(True)
 		self.Show(True)
 		
 		self.Controller = Controller(self)
